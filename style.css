@@ -196,7 +196,7 @@ button:hover {
   background-position: center center;
 }
 .slideshow-container {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   position: relative;
   margin: auto;
@@ -252,15 +252,24 @@ button:hover {
     font-size: 11px;
   }
 }
-.karta {
+.direction {
   display: flex;
   flex-direction: row;
+  background-color: black;
+}
+.map {
+  margin: 20px;
+  margin-left: 60px;
 }
 .plats-container {
-  background-color: black;
-  width: 100%;
+  margin: auto;
+  margin-right: 0px;
+  background-color: darkslategray;
+  padding: 100px;
+
 }
 .plats {
   color: white;
-  
+  text-decoration: none;
+  list-style: none;
 }
