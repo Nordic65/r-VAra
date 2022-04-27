@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style></style>
-  </head>
-  <body>
-    <header>
-      <div class="logo">rÅVAra</div>
-      <nav role="navigation">
-        <ul class="menu">
-          <li class="menu-item games dropdown">Hem
-            </div>
-          </li>
-          <li class="menu-item news"><a href="#">Om oss</a></li>
-          <li class="menu-item support"><a href="#">Info</a></li>
-        </ul>
-      </nav>
-      <a class="loginbtn" href="Login.html"><button>Konatakta</button></a>
-      <div class="dropdown">
-        <a class="burgerbtn"><i class="fas fa-bars"></i></a>
-        <div class="dropdown-content">
-          <a href="#">Hem</a>
-          <a href="#">Om oss</a>
-          <a href="#">Info</a>
-          <a class="loginbtn" href="Login.html"><button>Boka bord</button></a>
+<head>
+    <title>Save form Data in a Text File using JavaScript</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    	div {
+            padding: 10px;
+            background-color: #f6f6f6;
+            overflow: hidden;
+        }
+    	input[type=text], textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type=button]{ 
+            width: auto;
+            float: right;
+            cursor: pointer;
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+        <!--Add few elements to the form-->
+
+        <div>
+            <input type="text" id="txtName" placeholder="Enter your name" />
         </div>
-      </div>
-    </header>
-  </body>
+        <div>
+            <input type="text" id="txtAge" placeholder="Enter your age" />
+        </div>
+        <div>
+            <input type="text" id="txtEmail" placeholder="Enter your email address" />
+        </div>
+        <div>
+            <select id="selCountry">
+                <option selected value="">-- Choose the country --</option>
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+                <option value="USA">USA</option>
+            </select>
+        </div>
+        <div>
+            <textarea id="msg" name="msg" placeholder="Write some message ..." style="height:100px"></textarea>
+        </div>
+
+        <!--Add to button to save the data.-->
+        <div>
+            <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+        </div>
+    </div>
+    
+    <a href="home.html">link</a>
+</body>
 </html>
