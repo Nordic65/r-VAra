@@ -32,7 +32,13 @@
     <aside class="boka">        
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  
+        <form action="/action_page.php">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </form> 
       </div>
 
       <div id="main">
@@ -77,8 +83,10 @@
         <span class="dot"></span>
     </section>
     <section class="information">
-      <div>
-        <div></div>
+      <div class="info-container">
+        <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+
+        </div>
       </div>
     </section>
     <section class="direction">

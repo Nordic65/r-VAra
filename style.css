@@ -252,6 +252,18 @@ button:hover {
     font-size: 11px;
   }
 }
+.information {
+  height: 400px;
+  max-width: 100%;
+  display: flex;
+}
+.info-container {
+  margin-left: 100px;
+  margin: auto;
+  max-width: 300px;
+  box-shadow: 6px 6px 2px 1px grey;
+
+}
 .direction {
   display: flex;
   flex-direction: row;
