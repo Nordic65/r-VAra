@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Verdana, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
+
 li,
 a,
 button {
@@ -71,6 +72,9 @@ button:hover {
 }
 
 @media screen and (max-width: 1185px) {
+  header {
+    padding: 10px 10%;
+  }
   .burgerbtn {
     display: block;
     font-size: 30px;
@@ -91,7 +95,7 @@ button:hover {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: darkslategray;
+    background-color: rgb(58, 206, 255);
     left: 0;
     right: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -124,9 +128,10 @@ button:hover {
     display: none;
   }
 }
-/* boka knapp*/
 
-.boka {
+/* ---- boka knapp ---- */
+
+.book {
   position: fixed;
   z-index: 1;
   right: -110px;
@@ -180,29 +185,38 @@ button:hover {
 .openbtn:hover {
   background-color: #444;
 }
+.header-book {
+  color: white;
+  padding-left: 20px;
+}
 form {
   color: white;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 .confirmbtn {
-  margin: 0;
-  right: 0;
+  margin-top: 20px;
 }
 
 #main {
   padding: 16px;
 }
-#body {
-  transition: margin-right 0.5s;
-}
 /* Slideshow container */
+#hero {
+  background-image: url(images/hero-sndagmiddag.jpg);
+  width: 100%;
+  height: 600px;
+}
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
 }
+/* slideshow */
 .slideshow-container {
   width: 100%;
-  height: auto;
+  max-height: 400px;
   position: relative;
   margin: auto;
 }
@@ -218,19 +232,15 @@ form {
   vertical-align: middle;
   align-items: center;
   margin: auto;
+  height: 400px;
+  width: auto;
+  object-fit: cover;
 }
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
-
 .active {
   background-color: #717171;
 }
@@ -249,32 +259,102 @@ form {
     opacity: 1;
   }
 }
+.hero-container {
+  margin: auto;
+  padding: 80px 0;
+  max-width: 1279px;
+}
+.hero-main {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  opacity: 0.7;
+}
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {
-    font-size: 11px;
+.hero-item {
+  flex: 1 1 30%;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 40px;
+  align-items: center;
+  margin: auto;
+}
+
+/*-----------hero laptop----------------*/
+@media screen and (max-width: 1285px) {
+  .hero-container {
+    padding: 60px 0;
+  }
+  .hero-main {
+    padding: 20px 0;
+  }
+  .hero-item {
+    font-size: 30px;
   }
 }
+/*-----------hero phone----------------*/
+@media screen and (max-width: 500px) {
+  header {
+    padding: 0 5%;
+  }
+  .logo {
+    max-height: 30px;
+  }
+  .burgerbtn {
+    display: block;
+    font-size: 25px;
+  }
+  .hero-container {
+    padding: 20px 0;
+  }
+  .hero-main {
+    padding: 0;
+  }
+  .hero-item {
+    font-size: 30px;
+  }
+}
+/* info */
 .information {
-  height: 400px;
+  max-height: 400px;
   max-width: 100%;
   display: flex;
 }
 .info-container {
-  margin-left: 100px;
-  margin: auto;
-  max-width: 300px;
-  box-shadow: 6px 6px 2px 1px grey;
+  margin: 5px 10px 10px 5px;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 6px 10px 10px 5px grey;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.info {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.info-image {
+  max-width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .info-container {
+    display: flex;
+    flex-direction: column;
+}
 }
 .direction {
   display: flex;
   flex-direction: row;
   background-color: black;
+  max-width: 100%;
 }
 .map {
   margin: 20px;
   margin-left: 60px;
+  max-width: 100%;
 }
 .plats-container {
   margin: auto;

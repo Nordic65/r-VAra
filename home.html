@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/4b39a549d2.js"
+    crossorigin="anonymous"
+  ></script>
 
     <title>rÅVAra Hem</title>
+  
   </head>
   <body id="body">
       <header>
@@ -29,15 +37,15 @@
           </div>
         </div>
       </header>
-    <aside class="boka">        
+    <aside class="book">        
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <h1 class="header-book">Boka</h1>
           <form name="myForm" id="myForm" action="javascript:Book();">
             Name:<br />
             <input type="text" name="fname" id="name" /><br /><br />
-            E-mail:
-            <input type="email" name="email" id="email" /><br /><br />
+            E-mail:<br />  
+            <input type="email" name="email" id="email" required /><br /><br />
             Time:<br />
             <input type="text" name="time" id="time" /> <br />
             <button class="confirmbtn">bekräfta</button>
@@ -48,48 +56,54 @@
         <button class="openbtn" onclick="openNav()">Boka</button>  
       </div>
     </aside>
-    <section class="hero">
+    <section id="hero" class="hero">
+      <div class="hero-container">
+        <div class="hero-main">
+          <div class="hero-item">
+            <h1>Välkommen till ÅVA Restaurang</h1>
+          </div>
+        </div>
+      </div>
 
+      <!-- slideshow -->
+<!--       
       <div class="slideshow-container">
         <div class="mySlides fade">
           <div class="image-container">
             <div class="slide-image">
-              <img src="images/gulddraken-740-x-494_1.jpeg" /> 
+              <img class="image" src="images/Åva_Gymnasium.jpg" /> 
             </div>
           </div>
-          <div class="text">Caption Text</div>
         </div>
   
         <div class="mySlides fade">
           <div class="image-container">
             <div class="slide-image">
-              <img src="images/jocke-740-x-494.jpeg"/>
+              <img class="image" src="images/signaturplankan_webben.jpg"/>
             </div>
           </div>
-          <div class="text">Caption Two</div>
         </div>
   
         <div class="mySlides fade">
           <div class="image-container">
             <div class="slide-image">
-              <img src="images/danielhaynes-740-x-494.jpeg" />
+              <img class="image" src="images/hero-sndagmiddag.jpg" />
             </div>
           </div>
-          <div class="text">Caption Three</div>
         </div>
       </div>
-      <br />
   
       <div style="text-align: center">
         <span class="dot"></span>
         <span class="dot"></span>
-        <span class="dot"></span>
+        <span class="dot"></span> -->
     </section>
     <section class="information">
       <div class="info-container">
         <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-
+          
         </div>
+        <img class="info-image" src="images/636262445022731936-fine-dining.webp" alt="fine dining">
       </div>
     </section>
     <section class="direction">
