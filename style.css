@@ -253,6 +253,7 @@ form {
 #body {
   transition: margin-right 0.5s;
 }
+/* Home */
 /* Hero */
 #hero {
   background-image: url(images/hero-sndagmiddag.jpg);
@@ -397,20 +398,72 @@ form {
     flex-direction: column;
 }
 }
+/* About */
+#hero-about {
+  background-image: url(images/Åva_Gymnasium.jpg);
+  width: 100%;
+  height: 600px;
+}
+
+.about {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+}
+.about-container {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-text {
+  flex: 1 1 50%;
+  margin: auto;
+  padding: 0 50px 0 50px;
+  max-width: 700px;
+  max-height: auto;
+}
+.about-image {
+  border-radius: 50px;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 1285px) {
+.about-image {
+  max-width: 375px;
+  max-height: 250px;
+  margin: auto;
+}
+}
+@media screen and (max-width: 750px) {
+  .about-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-text {
+    border: black solid 2px;
+    margin: 20px 0;
+  }
+  .about-image {
+    display: none;
+  }
+  }
 .direction {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   background-color: black;
   max-width: 100%;
 }
+.map-container {
+  margin: 40px auto;
+}
 .map {
-  margin: 20px;
-  margin-left: 60px;
+  margin: auto;
   max-width: 100%;
 }
 .plats-container {
-  margin: auto;
-  margin-right: 0px;
+  margin: 20px auto;
   background-color: darkslategray;
   padding: 100px;
 }

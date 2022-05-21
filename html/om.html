@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+      <script
+      src="https://kit.fontawesome.com/4b39a549d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Om oss</title>
+  </head>
+  <body id="body">
+    <header>
+      <div class="logo">rÅVAra</div>
+      <nav role="navigation">
+        <ul class="menu">
+          <li><a href="home.html">Hem</a></li>
+          <li><a href="om.html">Om oss</a></li>
+          <li><a href="test.html">Info</a></li>
+        </ul>
+      </nav>
+      <a class="contactbtn"><button>Kontakta</button></a>
+      <div class="dropdown">
+        <a class="burgerbtn"><i class="fas fa-bars"></i></a>
+        <div class="dropdown-content">
+          <a href="home.html">Hem</a>
+          <a href="om.html">Om oss</a>
+          <a href="#">Info</a>
+          <a class="contactbtn"><button>Kontakta</button></a>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeDropNav()">&times;</a>
+            <div class="overlay-content">
+              <form name="myForm" id="myForm" action="javascript:Book();">
+                Name:<br />
+                <input type="text" name="fname" id="name" /><br /><br />
+                E-mail:<br />  
+                <input type="email" name="email" id="email" required /><br /><br />
+                Time:<br />
+                <input type="text" name="time" id="time" /> <br />
+                <button class="confirmbtn">bekräfta</button>
+              </form>
+            </div>
+          </div>
+          <a onclick="openDropNav()"><button>boka</button></a>
+        </div>
+      </div>
+    </header>
+    <aside class="book">        
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">×</a>
+        <h1 class="header-book">Boka</h1>
+          <form name="myForm" id="myForm" action="javascript:Book();">
+            Name:<br />
+            <input type="text" name="fname" id="name" /><br /><br />
+            E-mail:<br />  
+            <input type="email" name="email" id="email" required /><br /><br />
+            Time:<br />
+            <input type="text" name="time" id="time" /> <br />
+            <button class="confirmbtn">bekräfta</button>
+          </form>
+      </div>
+
+      <div id="main">
+        <button class="openbtn" onclick="openSideNav()">Boka</button>  
+      </div>
+    </aside>
+    
+    <section id="hero-about" class="hero">
+      <div class="hero-container">
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h1>Lorem ipsum</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ipsum orci, sed bibendum eros venenatis a. Integer id molestie urna. Duis vulputate dui nunc, a dictum sapien ullamcorper quis. In elementum vitae massa vel rutrum. Curabitur quis augue blandit, tempor nibh et, varius ligula. Maecenas porttitor sit amet metus ut pulvinar. Vivamus faucibus justo id enim laoreet efficitur. Aliquam erat volutpat. Mauris hendrerit mi at nibh fringilla, in aliquet augue ultrices. Suspendisse arcu justo, consectetur a fringilla non, tristique eget dolor. Sed volutpat urna vitae enim molestie convallis. Ut scelerisque, ex et iaculis sodales, ipsum ipsum imperdiet arcu, vitae tristique sapien erat id enim. Mauris turpis augue, sagittis sit amet justo ac, accumsan efficitur orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi laoreet sem mauris, at blandit nulla venenatis at.</p>
+        </div>          
+        <img class="about-image" src="/images/danielhaynes-740-x-494.jpeg" alt="">
+        <img class="about-image" src="/images/gulddraken-740-x-494 (1).jpeg" alt="">
+        <div class="about-text">
+          <h1>Lorem ipsum</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ipsum orci, sed bibendum eros venenatis a. Integer id molestie urna. Duis vulputate dui nunc, a dictum sapien ullamcorper quis. In elementum vitae massa vel rutrum. Curabitur quis augue blandit, tempor nibh et, varius ligula. Maecenas porttitor sit amet metus ut pulvinar. Vivamus faucibus justo id enim laoreet efficitur. Aliquam erat volutpat. Mauris hendrerit mi at nibh fringilla, in aliquet augue ultrices. Suspendisse arcu justo, consectetur a fringilla non, tristique eget dolor. Sed volutpat urna vitae enim molestie convallis. Ut scelerisque, ex et iaculis sodales, ipsum ipsum imperdiet arcu, vitae tristique sapien erat id enim. Mauris turpis augue, sagittis sit amet justo ac, accumsan efficitur orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi laoreet sem mauris, at blandit nulla venenatis at.</p>
+        </div>  
+          <div class="about-text">
+            <h1>Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ipsum orci, sed bibendum eros venenatis a. Integer id molestie urna. Duis vulputate dui nunc, a dictum sapien ullamcorper quis. In elementum vitae massa vel rutrum. Curabitur quis augue blandit, tempor nibh et, varius ligula. Maecenas porttitor sit amet metus ut pulvinar. Vivamus faucibus justo id enim laoreet efficitur. Aliquam erat volutpat. Mauris hendrerit mi at nibh fringilla, in aliquet augue ultrices. Suspendisse arcu justo, consectetur a fringilla non, tristique eget dolor. Sed volutpat urna vitae enim molestie convallis. Ut scelerisque, ex et iaculis sodales, ipsum ipsum imperdiet arcu, vitae tristique sapien erat id enim. Mauris turpis augue, sagittis sit amet justo ac, accumsan efficitur orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi laoreet sem mauris, at blandit nulla venenatis at. </p></div>
+            <img class="about-image" src="/images/jocke-740-x-494.jpeg" alt="">
+          
+      </div>
+    </section>
+    <section class="direction">
+      <div class="map-container">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.5770929142286!2d18.06153201617027!3d59.440127609175825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9b937e97af13%3A0xef984bf2bc386cb7!2s%C3%85va%20gymnasium!5e0!3m2!1ssv!2sse!4v1648725836470!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+        <div class="plats-container">
+          <ul>
+            <li class="plats">Åva Skolgränd 1-3
+            </li>
+            <li class="plats">SE-183 14 Täby
+            </li>
+            <li class="plats">telefon: 08-55 55 81 01
+            </li>
+          </ul>
+        </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-item">
+          <h3>lorem ipsum</h3>
+          <ul class="footer-menu">
+            <li >lorem ipsum</li>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h3>lorem ipsum</h3>
+          <ul class="footer-menu">
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="/JavaScript/book.js"></script>
+    <script src="/JavaScript/script.js"></script>
+    
+  </body>
+</html>
