@@ -19,12 +19,21 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
-function openNav() {
+function openSideNav() {
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("body").style.marginRight = "250px";
 }
 
-function closeNav() {
+function closeSideNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("body").style.marginRight = "0";
+}
+
+function openDropNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+/* Close */
+function closeDropNav() {
+  document.getElementById("myNav").style.height = "0%";
 }
