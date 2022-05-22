@@ -411,7 +411,7 @@ form {
   display: flex;
 }
 .about-container {
-  max-width: 100%;
+  max-width: 1440px;
   height: auto;
   margin: auto;
   display: flex;
@@ -463,9 +463,10 @@ form {
   max-width: 100%;
 }
 .plats-container {
-  margin: 20px auto;
+  margin: auto;
   background-color: darkslategray;
   padding: 100px;
+  border-bottom: black solid 5px;
 }
 .plats {
   color: white;
