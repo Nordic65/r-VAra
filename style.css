@@ -449,6 +449,33 @@ form {
     display: none;
   }
   }
+.weather {
+  background-color: black;
+}
+.weather-header {
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.weather-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 24px;
+  width: 100%;
+  height: 400px;
+}
+.weatherparameter {
+  color: white;
+  border: 4px solid white;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin: auto;
+}
 .direction {
   display: flex;
   flex-wrap: wrap;

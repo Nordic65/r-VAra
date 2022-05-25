@@ -15,8 +15,8 @@ function showSlides() {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  slides[slideIndex - 1] = "block";
+  dots[slideIndex - 1] += " active";
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 function openSideNav() {
